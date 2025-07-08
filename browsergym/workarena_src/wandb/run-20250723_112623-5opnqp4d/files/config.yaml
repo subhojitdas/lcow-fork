@@ -1,0 +1,92 @@
+_wandb:
+    value:
+        cli_version: 0.21.0
+        e:
+            uzueqfjo787ynztbd1nygxerecs523yf:
+                apple:
+                    ecpuCores: 4
+                    gpuCores: 20
+                    memoryGb: 48
+                    name: Apple M4 Pro
+                    pcpuCores: 10
+                    ramTotalBytes: "51539607552"
+                    swapTotalBytes: "9663676416"
+                codePath: browsergym/workarena_src/train.py
+                codePathLocal: train.py
+                cpu_count: 14
+                cpu_count_logical: 14
+                disk:
+                    /:
+                        total: "494384795648"
+                        used: "368619225088"
+                email: subhojitdss@gmail.com
+                executable: /opt/anaconda3/envs/browsergym/bin/python
+                git:
+                    commit: 9190caae22e76eb58531f700c6d1ca6b5a13d297
+                    remote: https://github.com/dgjun32/lcow_iclr2025.git
+                host: 842f5778d984
+                memory:
+                    total: "51539607552"
+                os: macOS-15.5-arm64-arm-64bit
+                program: /Users/subhojit/workspace/lcow_iclr2025/browsergym/workarena_src/train.py
+                python: CPython 3.10.0
+                root: /Users/subhojit/workspace/lcow_iclr2025/browsergym/workarena_src
+                startedAt: "2025-07-23T05:56:23.076139Z"
+                writerId: uzueqfjo787ynztbd1nygxerecs523yf
+        m: []
+        python_version: 3.10.0
+        t:
+            "1":
+                - 1
+                - 11
+                - 49
+                - 51
+                - 71
+                - 84
+                - 98
+                - 105
+            "2":
+                - 1
+                - 11
+                - 49
+                - 51
+                - 71
+                - 84
+                - 98
+                - 105
+            "3":
+                - 13
+                - 19
+            "4": 3.10.0
+            "5": 0.21.0
+            "6": 4.53.2
+            "12": 0.21.0
+            "13": darwin-arm64
+backbone:
+    value: googleai/gemini-1.5-flash-002
+ckpt_dir:
+    value: ckpt/workarena_sft_iter_0
+eval_steps:
+    value: 50
+gradient_accumulation_steps:
+    value: 16
+iter:
+    value: 0
+logging_steps:
+    value: 1
+lr:
+    value: 1e-05
+model_name:
+    value: meta-llama/Meta-Llama-3.1-8B-Instruct
+n_epochs:
+    value: 4
+per_gpu_bsz:
+    value: 1
+save_steps:
+    value: 100
+seed:
+    value: 0
+warmup_ratio:
+    value: 0.1
+weight_decay:
+    value: 0.1

@@ -1,0 +1,20 @@
+Traceback (most recent call last):
+  File "/Applications/PyCharm.app/Contents/plugins/python-ce/helpers/pydev/pydevd.py", line 1570, in _exec
+    pydev_imports.execfile(file, globals, locals)  # execute the script
+  File "/Applications/PyCharm.app/Contents/plugins/python-ce/helpers/pydev/_pydev_imps/_pydev_execfile.py", line 18, in execfile
+    exec(compile(contents+"\n", file, 'exec'), glob, loc)
+  File "/Users/subhojit/workspace/lcow_iclr2025/browsergym/workarena_src/train.py", line 110, in <module>
+    main(cfg)
+  File "/Users/subhojit/workspace/lcow_iclr2025/browsergym/workarena_src/train.py", line 25, in main
+    train_df = pd.read_csv(f'./workarena_data/sft_train_iter_{cfg.iter}.csv')
+  File "/opt/anaconda3/envs/browsergym/lib/python3.10/site-packages/pandas/io/parsers/readers.py", line 1026, in read_csv
+    return _read(filepath_or_buffer, kwds)
+  File "/opt/anaconda3/envs/browsergym/lib/python3.10/site-packages/pandas/io/parsers/readers.py", line 620, in _read
+    parser = TextFileReader(filepath_or_buffer, **kwds)
+  File "/opt/anaconda3/envs/browsergym/lib/python3.10/site-packages/pandas/io/parsers/readers.py", line 1620, in __init__
+    self._engine = self._make_engine(f, self.engine)
+  File "/opt/anaconda3/envs/browsergym/lib/python3.10/site-packages/pandas/io/parsers/readers.py", line 1880, in _make_engine
+    self.handles = get_handle(
+  File "/opt/anaconda3/envs/browsergym/lib/python3.10/site-packages/pandas/io/common.py", line 873, in get_handle
+    handle = open(
+FileNotFoundError: [Errno 2] No such file or directory: './workarena_data/sft_train_iter_0.csv'

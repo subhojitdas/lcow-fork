@@ -1,0 +1,37 @@
+{
+  "os":  "macOS-15.5-arm64-arm-64bit",
+  "python":  "CPython 3.10.0",
+  "startedAt":  "2025-07-23T05:53:53.785337Z",
+  "program":  "/Users/subhojit/workspace/lcow_iclr2025/browsergym/workarena_src/train.py",
+  "codePath":  "browsergym/workarena_src/train.py",
+  "codePathLocal":  "train.py",
+  "git":  {
+    "remote":  "https://github.com/dgjun32/lcow_iclr2025.git",
+    "commit":  "9190caae22e76eb58531f700c6d1ca6b5a13d297"
+  },
+  "email":  "subhojitdss@gmail.com",
+  "root":  "/Users/subhojit/workspace/lcow_iclr2025/browsergym/workarena_src",
+  "host":  "842f5778d984",
+  "executable":  "/opt/anaconda3/envs/browsergym/bin/python",
+  "cpu_count":  14,
+  "cpu_count_logical":  14,
+  "disk":  {
+    "/":  {
+      "total":  "494384795648",
+      "used":  "368617340928"
+    }
+  },
+  "memory":  {
+    "total":  "51539607552"
+  },
+  "apple":  {
+    "name":  "Apple M4 Pro",
+    "ecpuCores":  4,
+    "pcpuCores":  10,
+    "gpuCores":  20,
+    "memoryGb":  48,
+    "swapTotalBytes":  "9663676416",
+    "ramTotalBytes":  "51539607552"
+  },
+  "writerId":  "vl0k6ofb7apy225m0a160ksa2rnqvgle"
+}

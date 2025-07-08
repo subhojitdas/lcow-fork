@@ -1,0 +1,1 @@
+{"_runtime":1572,"_timestamp":1.753251631097528e+09,"_step":0,"train/epoch":0,"train/global_step":0,"eval/steps_per_second":2.021,"eval/runtime":731.8129,"eval/num_tokens":0,"eval/loss":NaN,"_wandb":{"runtime":1572},"eval/mean_token_accuracy":0,"eval/samples_per_second":2.021}

@@ -1,0 +1,18 @@
+{"time":"2025-07-23T12:48:24.671364+05:30","level":"INFO","msg":"stream: starting","core version":"0.21.0"}
+{"time":"2025-07-23T12:48:25.213814+05:30","level":"INFO","msg":"stream: created new stream","id":"8jep69ly"}
+{"time":"2025-07-23T12:48:25.213831+05:30","level":"INFO","msg":"stream: started","id":"8jep69ly"}
+{"time":"2025-07-23T12:48:25.213841+05:30","level":"INFO","msg":"writer: Do: started","stream_id":"8jep69ly"}
+{"time":"2025-07-23T12:48:25.213856+05:30","level":"INFO","msg":"sender: started","stream_id":"8jep69ly"}
+{"time":"2025-07-23T12:48:25.213853+05:30","level":"INFO","msg":"handler: started","stream_id":"8jep69ly"}
+{"time":"2025-07-23T12:51:37.253169+05:30","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/subhojitdss-home/LCoW/8jep69ly/file_stream\": write tcp 10.17.142.144:55826->35.186.228.49:443: write: broken pipe"}
+{"time":"2025-07-23T12:51:39.700144+05:30","level":"INFO","msg":"stream: closing","id":"8jep69ly"}
+{"time":"2025-07-23T12:51:40.119578+05:30","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": write tcp 10.17.142.144:55564->35.186.228.49:443: write: broken pipe"}
+{"time":"2025-07-23T12:51:54.107094+05:30","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": http2: client conn could not be established"}
+{"time":"2025-07-23T12:51:54.107091+05:30","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/subhojitdss-home/LCoW/8jep69ly/file_stream\": http2: client conn could not be established"}
+{"time":"2025-07-23T12:51:54.498803+05:30","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": write tcp 10.17.142.144:55873->35.186.228.49:443: write: broken pipe"}
+{"time":"2025-07-23T12:52:00.637342+05:30","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-07-23T12:52:06.75131+05:30","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/subhojitdss-home/LCoW/8jep69ly/file_stream\": dial tcp 35.186.228.49:443: connect: operation timed out"}
+{"time":"2025-07-23T12:52:17.900415+05:30","level":"INFO","msg":"handler: closed","stream_id":"8jep69ly"}
+{"time":"2025-07-23T12:52:17.900511+05:30","level":"INFO","msg":"sender: closed","stream_id":"8jep69ly"}
+{"time":"2025-07-23T12:52:17.900434+05:30","level":"INFO","msg":"writer: Close: closed","stream_id":"8jep69ly"}
+{"time":"2025-07-23T12:52:18.213639+05:30","level":"INFO","msg":"stream: closed","id":"8jep69ly"}

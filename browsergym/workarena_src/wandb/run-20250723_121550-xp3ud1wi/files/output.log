@@ -1,0 +1,39 @@
+Adding EOS to train dataset: 100%|██████████| 1479/1479 [00:00<00:00, 10384.25 examples/s]
+Tokenizing train dataset:   0%|          | 0/1479 [00:00<?, ? examples/s]Token indices sequence length is longer than the specified maximum sequence length for this model (18087 > 2048). Running this sequence through the model will result in indexing errors
+Tokenizing train dataset: 100%|██████████| 1479/1479 [00:05<00:00, 270.26 examples/s]
+Truncating train dataset: 100%|██████████| 1479/1479 [00:00<00:00, 101704.69 examples/s]
+Adding EOS to eval dataset: 100%|██████████| 1479/1479 [00:00<00:00, 15280.98 examples/s]
+Tokenizing eval dataset: 100%|██████████| 1479/1479 [00:05<00:00, 278.89 examples/s]
+Truncating eval dataset: 100%|██████████| 1479/1479 [00:00<00:00, 243987.24 examples/s]
+Traceback (most recent call last):
+  File "/Users/subhojit/workspace/lcow_iclr2025/browsergym/workarena_src/train.py", line 119, in <module>
+    main(cfg)
+  File "/Users/subhojit/workspace/lcow_iclr2025/browsergym/workarena_src/train.py", line 69, in main
+    trainer = SFTTrainer(
+  File "/opt/anaconda3/envs/browsergym/lib/python3.10/site-packages/trl/trainer/sft_trainer.py", line 506, in __init__
+    super().__init__(
+  File "/opt/anaconda3/envs/browsergym/lib/python3.10/site-packages/transformers/utils/deprecation.py", line 172, in wrapped_func
+    return func(*args, **kwargs)
+  File "/opt/anaconda3/envs/browsergym/lib/python3.10/site-packages/transformers/trainer.py", line 465, in __init__
+    self.create_accelerator_and_postprocess()
+  File "/opt/anaconda3/envs/browsergym/lib/python3.10/site-packages/transformers/trainer.py", line 5208, in create_accelerator_and_postprocess
+    self.accelerator = Accelerator(**args)
+  File "/opt/anaconda3/envs/browsergym/lib/python3.10/site-packages/accelerate/accelerator.py", line 567, in __init__
+    raise ValueError(f"fp16 mixed precision requires a GPU (not {self.device.type!r}).")
+ValueError: fp16 mixed precision requires a GPU (not 'mps').
+Traceback (most recent call last):
+  File "/Users/subhojit/workspace/lcow_iclr2025/browsergym/workarena_src/train.py", line 119, in <module>
+    main(cfg)
+  File "/Users/subhojit/workspace/lcow_iclr2025/browsergym/workarena_src/train.py", line 69, in main
+    trainer = SFTTrainer(
+  File "/opt/anaconda3/envs/browsergym/lib/python3.10/site-packages/trl/trainer/sft_trainer.py", line 506, in __init__
+    super().__init__(
+  File "/opt/anaconda3/envs/browsergym/lib/python3.10/site-packages/transformers/utils/deprecation.py", line 172, in wrapped_func
+    return func(*args, **kwargs)
+  File "/opt/anaconda3/envs/browsergym/lib/python3.10/site-packages/transformers/trainer.py", line 465, in __init__
+    self.create_accelerator_and_postprocess()
+  File "/opt/anaconda3/envs/browsergym/lib/python3.10/site-packages/transformers/trainer.py", line 5208, in create_accelerator_and_postprocess
+    self.accelerator = Accelerator(**args)
+  File "/opt/anaconda3/envs/browsergym/lib/python3.10/site-packages/accelerate/accelerator.py", line 567, in __init__
+    raise ValueError(f"fp16 mixed precision requires a GPU (not {self.device.type!r}).")
+ValueError: fp16 mixed precision requires a GPU (not 'mps').

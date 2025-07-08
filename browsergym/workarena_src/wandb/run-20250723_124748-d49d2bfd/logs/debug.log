@@ -1,0 +1,70 @@
+2025-07-23 12:47:48,179 INFO    MainThread:6706 [wandb_setup.py:_flush():80] Current SDK version is 0.21.0
+2025-07-23 12:47:48,179 INFO    MainThread:6706 [wandb_setup.py:_flush():80] Configure stats pid to 6706
+2025-07-23 12:47:48,179 INFO    MainThread:6706 [wandb_setup.py:_flush():80] Loading settings from /Users/subhojit/.config/wandb/settings
+2025-07-23 12:47:48,179 INFO    MainThread:6706 [wandb_setup.py:_flush():80] Loading settings from /Users/subhojit/workspace/lcow_iclr2025/browsergym/workarena_src/wandb/settings
+2025-07-23 12:47:48,179 INFO    MainThread:6706 [wandb_setup.py:_flush():80] Loading settings from environment variables
+2025-07-23 12:47:48,179 INFO    MainThread:6706 [wandb_init.py:setup_run_log_directory():703] Logging user logs to /Users/subhojit/workspace/lcow_iclr2025/browsergym/workarena_src/wandb/run-20250723_124748-d49d2bfd/logs/debug.log
+2025-07-23 12:47:48,180 INFO    MainThread:6706 [wandb_init.py:setup_run_log_directory():704] Logging internal logs to /Users/subhojit/workspace/lcow_iclr2025/browsergym/workarena_src/wandb/run-20250723_124748-d49d2bfd/logs/debug-internal.log
+2025-07-23 12:47:48,180 INFO    MainThread:6706 [wandb_init.py:init():830] calling init triggers
+2025-07-23 12:47:48,180 INFO    MainThread:6706 [wandb_init.py:init():835] wandb.init called with sweep_config: {}
+config: {'_wandb': {}}
+2025-07-23 12:47:48,180 INFO    MainThread:6706 [wandb_init.py:init():871] starting backend
+2025-07-23 12:47:48,417 INFO    MainThread:6706 [wandb_init.py:init():874] sending inform_init request
+2025-07-23 12:47:48,472 INFO    MainThread:6706 [wandb_init.py:init():882] backend started and connected
+2025-07-23 12:47:48,476 INFO    MainThread:6706 [wandb_init.py:init():953] updated telemetry
+2025-07-23 12:47:48,535 INFO    MainThread:6706 [wandb_init.py:init():977] communicating run to backend with 90.0 second timeout
+2025-07-23 12:47:49,419 INFO    MainThread:6706 [wandb_init.py:init():1029] starting run threads in backend
+2025-07-23 12:47:49,712 INFO    MainThread:6706 [wandb_run.py:_console_start():2458] atexit reg
+2025-07-23 12:47:49,712 INFO    MainThread:6706 [wandb_run.py:_redirect():2306] redirect: wrap_raw
+2025-07-23 12:47:49,712 INFO    MainThread:6706 [wandb_run.py:_redirect():2375] Wrapping output streams.
+2025-07-23 12:47:49,712 INFO    MainThread:6706 [wandb_run.py:_redirect():2398] Redirects installed.
+2025-07-23 12:47:49,715 INFO    MainThread:6706 [wandb_init.py:init():1075] run started, returning control to user process
+2025-07-23 12:47:49,715 INFO    MainThread:6706 [wandb_config.py:__setitem__():154] [no run ID] config set seed = 0 - <bound method Run._config_callback of <wandb.sdk.wandb_run.Run object at 0x13d5824a0>>
+2025-07-23 12:47:49,716 INFO    MainThread:6706 [wandb_run.py:_config_callback():1363] config_cb seed 0 None
+2025-07-23 12:47:49,716 INFO    MainThread:6706 [wandb_config.py:__setitem__():154] [no run ID] config set model_name = meta-llama/Meta-Llama-3.1-8B-Instruct - <bound method Run._config_callback of <wandb.sdk.wandb_run.Run object at 0x13d5824a0>>
+2025-07-23 12:47:49,716 INFO    MainThread:6706 [wandb_run.py:_config_callback():1363] config_cb model_name meta-llama/Meta-Llama-3.1-8B-Instruct None
+2025-07-23 12:47:49,716 INFO    MainThread:6706 [wandb_config.py:__setitem__():154] [no run ID] config set ckpt_dir = ckpt/workarena_sft_iter_0 - <bound method Run._config_callback of <wandb.sdk.wandb_run.Run object at 0x13d5824a0>>
+2025-07-23 12:47:49,716 INFO    MainThread:6706 [wandb_run.py:_config_callback():1363] config_cb ckpt_dir ckpt/workarena_sft_iter_0 None
+2025-07-23 12:47:49,716 INFO    MainThread:6706 [wandb_config.py:__setitem__():154] [no run ID] config set per_gpu_bsz = 1 - <bound method Run._config_callback of <wandb.sdk.wandb_run.Run object at 0x13d5824a0>>
+2025-07-23 12:47:49,716 INFO    MainThread:6706 [wandb_run.py:_config_callback():1363] config_cb per_gpu_bsz 1 None
+2025-07-23 12:47:49,716 INFO    MainThread:6706 [wandb_config.py:__setitem__():154] [no run ID] config set gradient_accumulation_steps = 16 - <bound method Run._config_callback of <wandb.sdk.wandb_run.Run object at 0x13d5824a0>>
+2025-07-23 12:47:49,716 INFO    MainThread:6706 [wandb_run.py:_config_callback():1363] config_cb gradient_accumulation_steps 16 None
+2025-07-23 12:47:49,716 INFO    MainThread:6706 [wandb_config.py:__setitem__():154] [no run ID] config set lr = 1e-05 - <bound method Run._config_callback of <wandb.sdk.wandb_run.Run object at 0x13d5824a0>>
+2025-07-23 12:47:49,716 INFO    MainThread:6706 [wandb_run.py:_config_callback():1363] config_cb lr 1e-05 None
+2025-07-23 12:47:49,716 INFO    MainThread:6706 [wandb_config.py:__setitem__():154] [no run ID] config set logging_steps = 1 - <bound method Run._config_callback of <wandb.sdk.wandb_run.Run object at 0x13d5824a0>>
+2025-07-23 12:47:49,716 INFO    MainThread:6706 [wandb_run.py:_config_callback():1363] config_cb logging_steps 1 None
+2025-07-23 12:47:49,716 INFO    MainThread:6706 [wandb_config.py:__setitem__():154] [no run ID] config set n_epochs = 4 - <bound method Run._config_callback of <wandb.sdk.wandb_run.Run object at 0x13d5824a0>>
+2025-07-23 12:47:49,716 INFO    MainThread:6706 [wandb_run.py:_config_callback():1363] config_cb n_epochs 4 None
+2025-07-23 12:47:49,716 INFO    MainThread:6706 [wandb_config.py:__setitem__():154] [no run ID] config set weight_decay = 0.1 - <bound method Run._config_callback of <wandb.sdk.wandb_run.Run object at 0x13d5824a0>>
+2025-07-23 12:47:49,716 INFO    MainThread:6706 [wandb_run.py:_config_callback():1363] config_cb weight_decay 0.1 None
+2025-07-23 12:47:49,717 INFO    MainThread:6706 [wandb_config.py:__setitem__():154] [no run ID] config set warmup_ratio = 0.1 - <bound method Run._config_callback of <wandb.sdk.wandb_run.Run object at 0x13d5824a0>>
+2025-07-23 12:47:49,717 INFO    MainThread:6706 [wandb_run.py:_config_callback():1363] config_cb warmup_ratio 0.1 None
+2025-07-23 12:47:49,717 INFO    MainThread:6706 [wandb_config.py:__setitem__():154] [no run ID] config set eval_steps = 50 - <bound method Run._config_callback of <wandb.sdk.wandb_run.Run object at 0x13d5824a0>>
+2025-07-23 12:47:49,717 INFO    MainThread:6706 [wandb_run.py:_config_callback():1363] config_cb eval_steps 50 None
+2025-07-23 12:47:49,717 INFO    MainThread:6706 [wandb_config.py:__setitem__():154] [no run ID] config set save_steps = 100 - <bound method Run._config_callback of <wandb.sdk.wandb_run.Run object at 0x13d5824a0>>
+2025-07-23 12:47:49,717 INFO    MainThread:6706 [wandb_run.py:_config_callback():1363] config_cb save_steps 100 None
+2025-07-23 12:47:49,717 INFO    MainThread:6706 [wandb_config.py:__setitem__():154] [no run ID] config set iter = 0 - <bound method Run._config_callback of <wandb.sdk.wandb_run.Run object at 0x13d5824a0>>
+2025-07-23 12:47:49,717 INFO    MainThread:6706 [wandb_run.py:_config_callback():1363] config_cb iter 0 None
+2025-07-23 12:47:49,717 INFO    MainThread:6706 [wandb_config.py:__setitem__():154] [no run ID] config set backbone = googleai/gemini-1.5-flash-002 - <bound method Run._config_callback of <wandb.sdk.wandb_run.Run object at 0x13d5824a0>>
+2025-07-23 12:47:49,717 INFO    MainThread:6706 [wandb_run.py:_config_callback():1363] config_cb backbone googleai/gemini-1.5-flash-002 None
+2025-07-23 12:47:49,717 INFO    MainThread:6706 [wandb_config.py:__setitem__():154] [no run ID] config set iter = 0 - <bound method Run._config_callback of <wandb.sdk.wandb_run.Run object at 0x13d5824a0>>
+2025-07-23 12:47:49,717 INFO    MainThread:6706 [wandb_run.py:_config_callback():1363] config_cb iter 0 None
+2025-07-23 12:48:13,286 WARNING MsgRouterThr:6706 [router.py:message_loop():63] [no run ID] message_loop has been closed
+Traceback (most recent call last):
+  File "/opt/anaconda3/envs/browsergym/lib/python3.10/site-packages/wandb/sdk/interface/router_sock.py", line 27, in _read_message
+    return self._sock_client.read_server_response(timeout=1)
+  File "/opt/anaconda3/envs/browsergym/lib/python3.10/site-packages/wandb/sdk/lib/sock_client.py", line 231, in read_server_response
+    data = self._read_packet_bytes(timeout=timeout)
+  File "/opt/anaconda3/envs/browsergym/lib/python3.10/site-packages/wandb/sdk/lib/sock_client.py", line 216, in _read_packet_bytes
+    raise SockClientClosedError
+wandb.sdk.lib.sock_client.SockClientClosedError
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/opt/anaconda3/envs/browsergym/lib/python3.10/site-packages/wandb/sdk/interface/router.py", line 56, in message_loop
+    msg = self._read_message()
+  File "/opt/anaconda3/envs/browsergym/lib/python3.10/site-packages/wandb/sdk/interface/router_sock.py", line 29, in _read_message
+    raise MessageRouterClosedError from e
+wandb.sdk.interface.router.MessageRouterClosedError
+2025-07-23 12:48:13,289 INFO    MsgRouterThr:6706 [mailbox.py:close():129] [no run ID] Closing mailbox, abandoning 1 handles.
