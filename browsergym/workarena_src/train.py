@@ -1,10 +1,10 @@
-import os
-import time
-import json
-import warnings
-import torch
+# import os
+# import time
+# import json
+# import warnings
+# import torch
 
-import trl
+# import trl
 from trl import SFTTrainer, DataCollatorForCompletionOnlyLM, SFTConfig
 import wandb
 import pandas as pd
@@ -25,7 +25,7 @@ def compute_metrics(eval_preds):
     predictions = logits.argmax(-1)
     return accuracy.compute(predictions=predictions, references=labels)
 
-import peft 
+# import peft
 
 #####################################################################
 def main(cfg):
