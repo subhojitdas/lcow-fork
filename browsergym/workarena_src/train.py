@@ -30,9 +30,9 @@ def compute_metrics(eval_preds):
 #####################################################################
 def main(cfg):
     # load dataset for training and validation
-    train_df = pd.read_csv(f'/Users/subhojit/workspace/lcow_iclr2025/browsergym/sft_train_subset.csv')
+    train_df = pd.read_csv(f'/home/ubuntu/lcow-fork/browsergym/sft_train_subset.csv')
     train_dataset = Dataset(pa.Table.from_pandas(train_df))  
-    val_df = pd.read_csv(f'/Users/subhojit/workspace/lcow_iclr2025/browsergym/sft_train_subset.csv')
+    val_df = pd.read_csv(f'/home/ubuntu/lcow-fork/browsergym/sft_train_subset.csv')
     val_dataset = Dataset(pa.Table.from_pandas(train_df))  
     
     # load model and tokenizers
