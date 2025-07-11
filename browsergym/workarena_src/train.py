@@ -101,7 +101,7 @@ if __name__ == '__main__':
     # config
     cfg = wandb.config
     cfg.seed = 0
-    cfg.model_name = "meta-llama/Meta-Llama-3.1-8B-Instruct"
+    cfg.model_name = "microsoft/Phi-3-mini-128k-instruct"
     cfg.ckpt_dir = f'ckpt/workarena_sft_iter_{args.iter}'
     cfg.per_gpu_bsz = 1
     cfg.gradient_accumulation_steps = 16
