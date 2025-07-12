@@ -46,7 +46,7 @@ def main(cfg):
         per_device_train_batch_size=cfg.per_gpu_bsz,
         per_device_eval_batch_size=cfg.per_gpu_bsz,
         fp16=False,
-        bf16=False,
+        bf16=True,
         gradient_accumulation_steps=cfg.gradient_accumulation_steps,
         gradient_checkpointing=True,
         learning_rate=cfg.lr,
@@ -103,7 +103,7 @@ if __name__ == '__main__':
     cfg.seed = 0
     cfg.model_name = "microsoft/Phi-3-mini-128k-instruct"
     cfg.ckpt_dir = f'ckpt/workarena_sft_iter_{args.iter}'
-    cfg.per_gpu_bsz = 1
+    cfg.per_gpu_bsz = 16
     cfg.gradient_accumulation_steps = 16
     cfg.lr = 1e-5
     cfg.logging_steps = 1
