@@ -57,6 +57,7 @@ def main(cfg):
         report_to="wandb",
         save_strategy="epoch",
         eval_on_start = True,
+        max_seq_length=2048,
         # evaluation_strategy="epoch",
         seed=cfg.seed,
         group_by_length=True
