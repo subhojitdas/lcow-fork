@@ -31,10 +31,10 @@ def compute_metrics(eval_preds):
 def main(cfg):
     # load dataset for training and validation
     train_df = pd.read_csv(f'/home/ubuntu/lcow-fork/browsergym/sft_train_subset.csv')
-    train_dataset = Dataset(pa.Table.from_pandas(train_df))  
+    train_dataset = Dataset(pa.Table.from_pandas(train_df))
     val_df = pd.read_csv(f'/home/ubuntu/lcow-fork/browsergym/sft_train_subset.csv')
-    val_dataset = Dataset(pa.Table.from_pandas(train_df))  
-    
+    val_dataset = Dataset(pa.Table.from_pandas(val_df)) # Corrected: Use val_df for val_dataset
+
     # load model and tokenizers
     base_model, tokenizer = load_hfmodel()
     tokenizer.padding_side = 'right'
@@ -46,9 +46,10 @@ def main(cfg):
         per_device_train_batch_size=cfg.per_gpu_bsz,
         per_device_eval_batch_size=cfg.per_gpu_bsz,
         fp16=False,
-        bf16=True,
+        bf16=True, # Keep BF16 for memory efficiency
         gradient_accumulation_steps=cfg.gradient_accumulation_steps,
         gradient_checkpointing=True,
+        gradient_checkpointing_kwargs={'use_reentrant':False}, # ADDED FOR DDP + GRADIENT CHECKPOINTING
         learning_rate=cfg.lr,
         logging_steps=cfg.logging_steps,
         num_train_epochs=cfg.n_epochs,
@@ -57,23 +58,22 @@ def main(cfg):
         report_to="wandb",
         save_strategy="epoch",
         eval_on_start = True,
-        max_seq_length=2048,
         # evaluation_strategy="epoch",
         seed=cfg.seed,
-        group_by_length=True
+        group_by_length=True,
+        max_seq_length=2048, # MOVED HERE AND SET TO A REASONABLE VALUE
     )
- 
 
     sep_tokens = tokenizer.encode('<|start_header_id|>assistant<|end_header_id|>')[1:]
-    data_collator = DataCollatorForCompletionOnlyLM(response_template = sep_tokens, 
+    data_collator = DataCollatorForCompletionOnlyLM(response_template = sep_tokens,
                                                     tokenizer=tokenizer)
     trainer = SFTTrainer(
         model=base_model,
         train_dataset=train_dataset,
         eval_dataset=val_dataset,
-        # dataset_text_field='text',
-        # max_seq_length=30000,
-        # tokenizer=tokenizer,
+        # dataset_text_field='text', # Uncomment if your CSV has a 'text' column for content
+        # max_seq_length is now in SFTConfig, so remove it from here
+        # tokenizer is typically inferred or not directly passed to SFTTrainer in newer trl versions
         args=training_args,
         data_collator = data_collator,
         compute_metrics=compute_metrics,
@@ -104,18 +104,18 @@ if __name__ == '__main__':
     cfg.seed = 0
     cfg.model_name = "microsoft/Phi-3-mini-128k-instruct"
     cfg.ckpt_dir = f'ckpt/workarena_sft_iter_{args.iter}'
-    cfg.per_gpu_bsz = 16
-    cfg.gradient_accumulation_steps = 16
+    cfg.per_gpu_bsz = 1
+    cfg.gradient_accumulation_steps = 16  # Consider increasing if 2048 seq_len is still OOM
     cfg.lr = 1e-5
     cfg.logging_steps = 1
     cfg.n_epochs = 4
-    cfg.weight_decay=0.1
-    cfg.warmup_ratio=0.1
-    cfg.eval_steps=50
-    cfg.save_steps=100
-    cfg.iter=args.iter
-    cfg.backbone=args.backbone
+    cfg.weight_decay = 0.1
+    cfg.warmup_ratio = 0.1
+    cfg.eval_steps = 50
+    cfg.save_steps = 100
     cfg.iter = args.iter
+    cfg.backbone = args.backbone  # This might not be used if load_hfmodel uses cfg.model_name
+    cfg.iter = args.iter  # Duplicate, can remove one
 
     main(cfg)
 
