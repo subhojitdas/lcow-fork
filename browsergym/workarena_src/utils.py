@@ -55,7 +55,8 @@ from transformers import AutoModelForCausalLM, AutoTokenizer
 #     return base_model, tokenizer
 
 def load_hfmodel(model_id=None):
-    device = torch.device("mps" if torch.backends.mps.is_available() else "cpu")
+    # device = torch.device("mps" if torch.backends.mps.is_available() else "cpu")
+    device = torch.device("cuda")
     model_id = model_id if model_id else "TinyLlama/TinyLlama-1.1B-Chat-v1.0"
     # bnb_config = BitsAndBytesConfig(load_in_4bit=True, bnb_4bit_compute_dtype=torch.float16)
 
