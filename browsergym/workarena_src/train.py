@@ -61,7 +61,7 @@ def main(cfg):
         # evaluation_strategy="epoch",
         seed=cfg.seed,
         group_by_length=True,
-        max_seq_length=64, # MOVED HERE AND SET TO A REASONABLE VALUE
+        max_seq_length=512, # MOVED HERE AND SET TO A REASONABLE VALUE
     )
 
     sep_tokens = tokenizer.encode('<|start_header_id|>assistant<|end_header_id|>')[1:]
@@ -82,6 +82,10 @@ def main(cfg):
     print('Set Trainer')
     print('Start Training!')
     trainer.train()
+
+    output_model_dir = "./"
+    trainer.save_model(output_model_dir)
+    print(f"Model saved locally to: {output_model_dir}")
     
 
 if __name__ == '__main__':
