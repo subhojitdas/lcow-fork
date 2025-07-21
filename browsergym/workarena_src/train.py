@@ -61,7 +61,7 @@ def main(cfg):
         # evaluation_strategy="epoch",
         seed=cfg.seed,
         group_by_length=True,
-        max_seq_length=256, # MOVED HERE AND SET TO A REASONABLE VALUE
+        max_seq_length=128, # MOVED HERE AND SET TO A REASONABLE VALUE
     )
 
     sep_tokens = tokenizer.encode('<|start_header_id|>assistant<|end_header_id|>')[1:]
