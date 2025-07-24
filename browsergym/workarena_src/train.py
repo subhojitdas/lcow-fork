@@ -38,7 +38,7 @@ def main(cfg):
     val_dataset = Dataset(pa.Table.from_pandas(val_df))
 
     # load model and tokenizers
-    base_model, tokenizer = load_hfmodel()
+    base_model, tokenizer = load_hfmodel(cfg.model_id)
     tokenizer.padding_side = 'right'
 
     training_args = SFTConfig(
@@ -108,7 +108,7 @@ if __name__ == '__main__':
     # config
     cfg = wandb.config
     cfg.seed = 0
-    cfg.model_name = "microsoft/Phi-3-mini-128k-instruct"
+    cfg.model_name = "mistralai/Mistral-7B-v0.1"
     cfg.ckpt_dir = f'ckpt/workarena_sft_iter_{args.iter}'
     cfg.per_gpu_bsz = 1
     cfg.gradient_accumulation_steps = 16  # Consider increasing if 2048 seq_len is still OOM
