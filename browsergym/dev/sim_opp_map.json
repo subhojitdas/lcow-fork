@@ -1,0 +1,924 @@
+{
+  "SELECT Pickup": {
+    "sim": [
+      [
+        "SELECT Collect",
+        "SELECT Retrieve"
+      ]
+    ],
+    "opp": [
+      [
+        "SELECT Dropoff",
+        "SELECT Release"
+      ]
+    ]
+  },
+  "CLICK ": {
+    "sim": [
+      [
+        "TAP ",
+        "SELECT "
+      ],
+      [
+        "TAP ",
+        "SELECT "
+      ],
+      [
+        "TAP ",
+        "SELECT "
+      ],
+      [
+        "TAP ",
+        "SELECT "
+      ],
+      [
+        "TAP ",
+        "SELECT "
+      ],
+      [
+        "TAP ",
+        "SELECT "
+      ],
+      [
+        "TAP ",
+        "SELECT "
+      ],
+      [
+        "TAP ",
+        "SELECT "
+      ],
+      [
+        "TAP ",
+        "SELECT "
+      ],
+      [
+        "TAP ",
+        "SELECT "
+      ],
+      [
+        "TAP ",
+        "SELECT "
+      ],
+      [
+        "TAP ",
+        "SELECT "
+      ],
+      [
+        "TAP ",
+        "SELECT "
+      ],
+      [
+        "TAP ",
+        "SELECT "
+      ],
+      [
+        "TAP ",
+        "SELECT "
+      ],
+      [
+        "TAP ",
+        "SELECT "
+      ],
+      [
+        "TAP ",
+        "SELECT "
+      ],
+      [
+        "TAP ",
+        "PRESS "
+      ],
+      [
+        "TAP ",
+        "PRESS "
+      ],
+      [
+        "TAP ",
+        "SELECT "
+      ],
+      [
+        "TAP ",
+        "SELECT "
+      ],
+      [
+        "TAP ",
+        "SELECT "
+      ],
+      [
+        "TAP ",
+        "SELECT "
+      ],
+      [
+        "TAP ",
+        "SELECT "
+      ],
+      [
+        "CLICK button",
+        "TAP "
+      ],
+      [
+        "TAP ",
+        "SELECT "
+      ],
+      [
+        "TAP ",
+        "SELECT "
+      ],
+      [
+        "TAP ",
+        "SELECT "
+      ],
+      [
+        "TAP ",
+        "SELECT "
+      ],
+      [
+        "TAP ",
+        "SELECT "
+      ],
+      [
+        "TAP ",
+        "SELECT "
+      ],
+      [
+        "TAP ",
+        "SELECT "
+      ],
+      [
+        "TAP ",
+        "SELECT "
+      ],
+      [
+        "TAP ",
+        "SELECT "
+      ],
+      [
+        "TAP ",
+        "SELECT "
+      ],
+      [
+        "TAP ",
+        "SELECT "
+      ],
+      [
+        "TAP ",
+        "SELECT "
+      ],
+      [
+        "CLICK button",
+        "TAP "
+      ],
+      [
+        "TAP ",
+        "SELECT "
+      ],
+      [
+        "TAP ",
+        "SELECT "
+      ],
+      [
+        "TAP ",
+        "SELECT "
+      ],
+      [
+        "TAP ",
+        "SELECT "
+      ],
+      [
+        "TAP ",
+        "SELECT "
+      ],
+      [
+        "TAP ",
+        "SELECT "
+      ],
+      [
+        "TAP ",
+        "SELECT "
+      ],
+      [
+        "TAP ",
+        "SELECT "
+      ],
+      [
+        "TAP ",
+        "SELECT "
+      ],
+      [
+        "TAP ",
+        "SELECT "
+      ],
+      [
+        "TAP ",
+        "SELECT "
+      ],
+      [
+        "TAP ",
+        "SELECT "
+      ],
+      [
+        "TAP ",
+        "SELECT "
+      ],
+      [
+        "TAP ",
+        "SELECT "
+      ],
+      [
+        "TAP ",
+        "SELECT "
+      ],
+      [
+        "TAP ",
+        "SELECT "
+      ],
+      [
+        "TAP ",
+        "SELECT "
+      ],
+      [
+        "TAP ",
+        "SELECT "
+      ],
+      [
+        "TAP ",
+        "SELECT "
+      ],
+      [
+        "TAP ",
+        "SELECT "
+      ],
+      [
+        "TAP ",
+        "SELECT "
+      ],
+      [
+        "TAP ",
+        "SELECT "
+      ],
+      [
+        "TAP ",
+        "SELECT "
+      ],
+      [
+        "TAP ",
+        "SELECT "
+      ],
+      [
+        "TAP ",
+        "SELECT "
+      ],
+      [
+        "TAP ",
+        "SELECT "
+      ],
+      [
+        "TAP ",
+        "SELECT "
+      ],
+      [
+        "TAP ",
+        "SELECT "
+      ],
+      [
+        "TAP ",
+        "SELECT "
+      ],
+      [
+        "TAP ",
+        "SELECT "
+      ],
+      [
+        "TAP ",
+        "SELECT "
+      ],
+      [
+        "TAP ",
+        "SELECT "
+      ],
+      [
+        "TAP ",
+        "SELECT "
+      ],
+      [
+        "TAP ",
+        "SELECT "
+      ],
+      [
+        "TAP ",
+        "SELECT "
+      ],
+      [
+        "CLICK button",
+        "CLICK link"
+      ],
+      [
+        "TAP ",
+        "SELECT "
+      ],
+      [
+        "TAP ",
+        "SELECT "
+      ],
+      [
+        "TAP ",
+        "SELECT "
+      ],
+      [
+        "TAP ",
+        "SELECT "
+      ],
+      [
+        "TAP ",
+        "SELECT "
+      ],
+      [
+        "TAP ",
+        "SELECT "
+      ]
+    ],
+    "opp": [
+      [
+        "CLOSE ",
+        "CANCEL "
+      ],
+      [
+        "IGNORE ",
+        "CLOSE "
+      ],
+      [
+        "IGNORE ",
+        "CLOSE "
+      ],
+      [
+        "IGNORE ",
+        "CLOSE "
+      ],
+      [
+        "IGNORE ",
+        "CLOSE "
+      ],
+      [
+        "IGNORE ",
+        "DISMISS "
+      ],
+      [
+        "IGNORE ",
+        "DISMISS "
+      ],
+      [
+        "UNCLICK ",
+        "IGNORE "
+      ],
+      [
+        "IGNORE ",
+        "CLOSE "
+      ],
+      [
+        "IGNORE ",
+        "CLOSE "
+      ],
+      [
+        "IGNORE ",
+        "CLOSE "
+      ],
+      [
+        "IGNORE ",
+        "CLOSE "
+      ],
+      [
+        "CLOSE ",
+        "IGNORE "
+      ],
+      [
+        "IGNORE ",
+        "CLOSE "
+      ],
+      [
+        "IGNORE ",
+        "DISMISS "
+      ],
+      [
+        "IGNORE ",
+        "CLOSE "
+      ],
+      [
+        "IGNORE ",
+        "CLOSE "
+      ],
+      [
+        "IGNORE ",
+        "CLOSE "
+      ],
+      [
+        "IGNORE ",
+        "DISMISS "
+      ],
+      [
+        "IGNORE ",
+        "CLOSE "
+      ],
+      [
+        "IGNORE ",
+        "CLOSE "
+      ],
+      [
+        "IGNORE ",
+        "CLOSE "
+      ],
+      [
+        "IGNORE ",
+        "CLOSE "
+      ],
+      [
+        "CLOSE ",
+        "IGNORE "
+      ],
+      [
+        "IGNORE ",
+        "CLOSE window"
+      ],
+      [
+        "IGNORE ",
+        "DELETE "
+      ],
+      [
+        "IGNORE ",
+        "CLOSE "
+      ],
+      [
+        "IGNORE ",
+        "CLOSE "
+      ],
+      [
+        "UNCLICK ",
+        "DESELECT "
+      ],
+      [
+        "IGNORE ",
+        "CLOSE "
+      ],
+      [
+        "DOUBLE_CLICK ",
+        "HOVER "
+      ],
+      [
+        "IGNORE ",
+        "CLOSE "
+      ],
+      [
+        "IGNORE ",
+        "CLOSE "
+      ],
+      [
+        "IGNORE ",
+        "CLOSE "
+      ],
+      [
+        "IGNORE ",
+        "CLOSE "
+      ],
+      [
+        "CLOSE ",
+        "CANCEL "
+      ],
+      [
+        "IGNORE ",
+        "CLOSE "
+      ],
+      [
+        "IGNORE ",
+        "CLOSE window"
+      ],
+      [
+        "CLOSE ",
+        "DESELECT "
+      ],
+      [
+        "IGNORE ",
+        "CLOSE "
+      ],
+      [
+        "CLOSE ",
+        "IGNORE "
+      ],
+      [
+        "IGNORE ",
+        "SCROLL "
+      ],
+      [
+        "IGNORE ",
+        "CLOSE "
+      ],
+      [
+        "CLOSE ",
+        "IGNORE "
+      ],
+      [
+        "IGNORE ",
+        "CLOSE "
+      ],
+      [
+        "CLOSE ",
+        "IGNORE "
+      ],
+      [
+        "UNCLICK ",
+        "IGNORE "
+      ],
+      [
+        "IGNORE ",
+        "SKIP "
+      ],
+      [
+        "UNDO_CLICK ",
+        "BLOCK_CLICK "
+      ],
+      [
+        "UNCLICK ",
+        "IGNORE "
+      ],
+      [
+        "UNDO_CLICK ",
+        "IGNORE "
+      ],
+      [
+        "IGNORE ",
+        "CLOSE "
+      ],
+      [
+        "IGNORE ",
+        "SKIP "
+      ],
+      [
+        "IGNORE ",
+        "CLOSE "
+      ],
+      [
+        "IGNORE ",
+        "SKIP "
+      ],
+      [
+        "IGNORE ",
+        "SKIP "
+      ],
+      [
+        "CLOSE ",
+        "IGNORE "
+      ],
+      [
+        "CLOSE ",
+        "EXIT "
+      ],
+      [
+        "IGNORE ",
+        "CLOSE "
+      ],
+      [
+        "CLOSE ",
+        "DESELECT "
+      ],
+      [
+        "IGNORE ",
+        "CLOSE "
+      ],
+      [
+        "CANCEL ",
+        "CLOSE "
+      ],
+      [
+        "IGNORE ",
+        "DISMISS "
+      ],
+      [
+        "IGNORE ",
+        "CLOSE "
+      ],
+      [
+        "UNCLICK ",
+        "DESELECT "
+      ],
+      [
+        "IGNORE ",
+        "CLOSE "
+      ],
+      [
+        "IGNORE ",
+        "CLOSE "
+      ],
+      [
+        "IGNORE ",
+        "CLOSE "
+      ],
+      [
+        "UNCLICK ",
+        "IGNORE "
+      ],
+      [
+        "IGNORE ",
+        "CLOSE "
+      ],
+      [
+        "IGNORE ",
+        "CLOSE "
+      ],
+      [
+        "IGNORE ",
+        "CLOSE "
+      ],
+      [
+        "IGNORE ",
+        "AVOID "
+      ],
+      [
+        "CLOSE ",
+        "IGNORE "
+      ],
+      [
+        "UNCLICK ",
+        "DESELECT "
+      ],
+      [
+        "CLOSE ",
+        "IGNORE "
+      ],
+      [
+        "UNDO_CLICK ",
+        "DESELECT "
+      ],
+      [
+        "CLOSE ",
+        "UNDO "
+      ],
+      [
+        "UNDO_CLICK ",
+        "DOUBLE_CLICK "
+      ],
+      [
+        "IGNORE ",
+        "CLOSE "
+      ]
+    ]
+  },
+  "TYPE Boston": {
+    "sim": [
+      [
+        "TYPE Cambridge",
+        "TYPE New York"
+      ]
+    ],
+    "opp": [
+      [
+        "DELETE Boston",
+        "TYPE Not Boston"
+      ]
+    ]
+  },
+  "SELECT 5 00 PM": {
+    "sim": [
+      [
+        "SELECT 5 30 PM",
+        "SELECT 4 45 PM"
+      ]
+    ],
+    "opp": [
+      [
+        "DESELECT 5 00 PM",
+        "SELECT 5 00 AM"
+      ]
+    ]
+  },
+  "SELECT 1 guest": {
+    "sim": [
+      [
+        "SELECT 2 guests",
+        "SELECT 1 adult"
+      ]
+    ],
+    "opp": [
+      [
+        "DESELECT 1 guest",
+        "REMOVE guest"
+      ]
+    ]
+  },
+  "TYPE NAPA VALLEY": {
+    "sim": [
+      [
+        "TYPE SONOMA VALLEY",
+        "TYPE BORDEAUX"
+      ]
+    ],
+    "opp": [
+      [
+        "DELETE NAPA VALLEY",
+        "TYPE DRY DESERT"
+      ]
+    ]
+  },
+  "SELECT Wineries": {
+    "sim": [
+      [
+        "SELECT Vineyards",
+        "SELECT Wine Tours"
+      ]
+    ],
+    "opp": [
+      [
+        "DESELECT Wineries",
+        "SELECT Breweries"
+      ]
+    ]
+  },
+  "SELECT 10 00 AM": {
+    "sim": [
+      [
+        "SELECT 10 30 AM",
+        "SELECT 9 45 AM"
+      ]
+    ],
+    "opp": [
+      [
+        "DESELECT 10 00 AM",
+        "SELECT 10 00 PM"
+      ]
+    ]
+  },
+  "SELECT 4 guests": {
+    "sim": [
+      [
+        "SELECT 5 guests",
+        "SELECT 4 people"
+      ]
+    ],
+    "opp": [
+      [
+        "DESELECT 4 guests",
+        "SELECT 0 guests"
+      ]
+    ]
+  },
+  "TYPE Allan": {
+    "sim": [
+      [
+        "TYPE Alan",
+        "TYPE Allen"
+      ]
+    ],
+    "opp": [
+      [
+        "DELETE Allan",
+        "ERASE Allan"
+      ]
+    ]
+  },
+  "TYPE Smith": {
+    "sim": [
+      [
+        "TYPE Johnson",
+        "TYPE Williams"
+      ]
+    ],
+    "opp": [
+      [
+        "DELETE Smith",
+        "ERASE Smith"
+      ]
+    ]
+  },
+  "TYPE allan.smith@gmail.com": {
+    "sim": [
+      [
+        "TYPE allan.smith@yahoo.com",
+        "TYPE allan.smith@outlook.com"
+      ],
+      [
+        "TYPE allan.smith@yahoo.com",
+        "TYPE allansmith@example.com"
+      ]
+    ],
+    "opp": [
+      [
+        "DELETE allan.smith@gmail.com",
+        "ERASE allan.smith@gmail.com"
+      ],
+      [
+        "DELETE allan.smith@gmail.com",
+        "TYPE no.email@domain.com"
+      ]
+    ]
+  },
+  "TYPE 10001": {
+    "sim": [
+      [
+        "TYPE 10002",
+        "TYPE 10003"
+      ]
+    ],
+    "opp": [
+      [
+        "DELETE 10001",
+        "CLEAR "
+      ]
+    ]
+  },
+  "TYPE Brooklyn": {
+    "sim": [
+      [
+        "TYPE Manhattan",
+        "TYPE Queens"
+      ]
+    ],
+    "opp": [
+      [
+        "DELETE Brooklyn",
+        "TYPE Los Angeles"
+      ]
+    ]
+  },
+  "SELECT 22": {
+    "sim": [
+      [
+        "SELECT 23",
+        "SELECT 21"
+      ]
+    ],
+    "opp": [
+      [
+        "DESELECT 22",
+        "REMOVE 22"
+      ]
+    ]
+  },
+  "TYPE SPRINGFIELD": {
+    "sim": [
+      [
+        "TYPE SHELBYVILLE",
+        "TYPE CAPITAL CITY"
+      ]
+    ],
+    "opp": [
+      [
+        "DELETE SPRINGFIELD",
+        "TYPE NOWHERE"
+      ]
+    ]
+  },
+  "TYPE AUSTIN": {
+    "sim": [
+      [
+        "TYPE DALLAS",
+        "TYPE HOUSTON"
+      ]
+    ],
+    "opp": [
+      [
+        "DELETE AUSTIN",
+        "TYPE LOS ANGELES"
+      ]
+    ]
+  },
+  "TYPE washington": {
+    "sim": [
+      [
+        "TYPE seattle",
+        "TYPE olympia"
+      ],
+      [
+        "TYPE seattle",
+        "TYPE new york"
+      ]
+    ],
+    "opp": [
+      [
+        "TYPE texas",
+        "TYPE california"
+      ],
+      [
+        "DELETE washington",
+        "TYPE miami"
+      ]
+    ]
+  },
+  "SELECT 11 00 AM": {
+    "sim": [
+      [
+        "SELECT 10 30 AM",
+        "SELECT 11 15 AM"
+      ],
+      [
+        "SELECT 10 30 AM",
+        "SELECT 11 15 AM"
+      ]
+    ],
+    "opp": [
+      [
+        "DESELECT 11 00 AM",
+        "SELECT 11 00 PM"
+      ],
+      [
+        "DESELECT 11 00 AM",
+        "CANCEL 11 00 AM"
+      ]
+    ]
+  }
+}
